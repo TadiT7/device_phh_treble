@@ -29,8 +29,8 @@
     <dimen name="status_bar_height_portrait">24dp</dimen>
     <dimen name="status_bar_height_landscape">24dp</dimen>
     <!-- Because we hardcode status_bar_height in Oreo device overlays,
-         we also need to do it here. -->
-    <dimen name="status_bar_height">24dp</dimen>
+         it's necessary to kill it here. -->
+    <dimen name="status_bar_height">@*android:dimen/status_bar_height_portrait</dimen>
     <!-- For rounded corners to work, set rounded_corner_radius_bottom or rounded_corner_radius
          in device overlay. -->
     <dimen name="rounded_corner_radius_top">@*android:dimen/rounded_corner_radius_bottom</dimen>
